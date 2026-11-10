@@ -1,0 +1,390 @@
+{
+ "prices": {
+  "files": [
+   "06_Exports/Tips/prices/01.jpg",
+   "06_Exports/Tips/prices/02.jpg",
+   "06_Exports/Tips/prices/03.jpg",
+   "06_Exports/Tips/prices/04.jpg",
+   "06_Exports/Tips/prices/05.jpg",
+   "06_Exports/Tips/prices/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/prices/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/prices/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/prices/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/prices/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/prices/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/prices/06.jpg"
+  ],
+  "label": "BALI PRICES",
+  "title": "What we REALLY paid in Bali",
+  "hashtags": [
+   "#Bali",
+   "#BaliPrices",
+   "#BaliOnABudget",
+   "#BaliTravel",
+   "#TravelTips",
+   "#PakistaniTraveller",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali mein asal mein kitna kharcha hua? 💸",
+  "q": "Aap ke hisaab se mehenga ya sasta? 👇",
+  "blog": "bali-prices-we-paid"
+ },
+ "itinerary": {
+  "files": [
+   "06_Exports/Tips/itinerary/01.jpg",
+   "06_Exports/Tips/itinerary/02.jpg",
+   "06_Exports/Tips/itinerary/03.jpg",
+   "06_Exports/Tips/itinerary/04.jpg",
+   "06_Exports/Tips/itinerary/05.jpg",
+   "06_Exports/Tips/itinerary/06.jpg",
+   "06_Exports/Tips/itinerary/07.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/itinerary/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/itinerary/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/itinerary/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/itinerary/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/itinerary/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/itinerary/06.jpg",
+   "https://nomadzohaib.github.io/media/tips/itinerary/07.jpg"
+  ],
+  "label": "1 DAY ITINERARY",
+  "title": "Kuta › Canggu 1 day, 5 stops",
+  "hashtags": [
+   "#Bali",
+   "#BaliItinerary",
+   "#Canggu",
+   "#Kuta",
+   "#BaliTravel",
+   "#TravelTips",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali mein sirf 1 din hai? Yeh route save karo 📌",
+  "q": "Aap kaunsa stop add karte? 👇",
+  "blog": "kuta-to-canggu-one-day"
+ },
+ "rain": {
+  "files": [
+   "06_Exports/Tips/rain/01.jpg",
+   "06_Exports/Tips/rain/02.jpg",
+   "06_Exports/Tips/rain/03.jpg",
+   "06_Exports/Tips/rain/04.jpg",
+   "06_Exports/Tips/rain/05.jpg",
+   "06_Exports/Tips/rain/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/rain/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/rain/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/rain/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/rain/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/rain/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/rain/06.jpg"
+  ],
+  "label": "BALI IN NOVEMBER",
+  "title": "Rainy season survival tips",
+  "hashtags": [
+   "#Bali",
+   "#BaliRainySeason",
+   "#BaliWeather",
+   "#BaliInNovember",
+   "#TravelTips",
+   "#ScooterLife",
+   "#NomadZohaib"
+  ],
+  "hook": "November mein Bali ja rahe ho? Yeh zaroor parho 🌧",
+  "q": "Barish mein aap kya karte? 👇",
+  "blog": "bali-day-5-guide"
+ },
+ "finns": {
+  "files": [
+   "06_Exports/Tips/finns/01.jpg",
+   "06_Exports/Tips/finns/02.jpg",
+   "06_Exports/Tips/finns/03.jpg",
+   "06_Exports/Tips/finns/04.jpg",
+   "06_Exports/Tips/finns/05.jpg",
+   "06_Exports/Tips/finns/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/finns/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/finns/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/finns/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/finns/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/finns/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/finns/06.jpg"
+  ],
+  "label": "FINNS · CANGGU",
+  "title": "Sunset at FINNS 4 tips",
+  "hashtags": [
+   "#FinnsBeachClub",
+   "#Canggu",
+   "#BaliSunset",
+   "#Bali",
+   "#TravelTips",
+   "#BaliTravel",
+   "#NomadZohaib"
+  ],
+  "hook": "FINNS ja rahe ho? Pehle yeh dekho 🌅",
+  "q": "Sunset ya sunrise, aap kya choose karte? 👇",
+  "blog": "kuta-to-canggu-one-day"
+ },
+ "beachwalk": {
+  "files": [
+   "06_Exports/Tips/beachwalk/01.jpg",
+   "06_Exports/Tips/beachwalk/02.jpg",
+   "06_Exports/Tips/beachwalk/03.jpg",
+   "06_Exports/Tips/beachwalk/04.jpg",
+   "06_Exports/Tips/beachwalk/05.jpg",
+   "06_Exports/Tips/beachwalk/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/beachwalk/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/beachwalk/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/beachwalk/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/beachwalk/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/beachwalk/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/beachwalk/06.jpg"
+  ],
+  "label": "BEACHWALK KUTA",
+  "title": "Labubu village & more",
+  "hashtags": [
+   "#Labubu",
+   "#PopMart",
+   "#BeachwalkBali",
+   "#Bali",
+   "#BaliShopping",
+   "#TravelTips",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali mein Labubu ka poora gaon 🧸",
+  "q": "Labubu fan ho? 👇",
+  "blog": "bali-day-5-guide"
+ },
+ "kuta_beach": {
+  "files": [
+   "06_Exports/Tips/kuta_beach/01.jpg",
+   "06_Exports/Tips/kuta_beach/02.jpg",
+   "06_Exports/Tips/kuta_beach/03.jpg",
+   "06_Exports/Tips/kuta_beach/04.jpg",
+   "06_Exports/Tips/kuta_beach/05.jpg",
+   "06_Exports/Tips/kuta_beach/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/kuta_beach/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/kuta_beach/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/kuta_beach/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/kuta_beach/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/kuta_beach/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/kuta_beach/06.jpg"
+  ],
+  "label": "KUTA BEACH",
+  "title": "Kuta Beach what to know",
+  "hashtags": [
+   "#KutaBeach",
+   "#Bali",
+   "#BaliBeach",
+   "#BaliTravel",
+   "#TravelTips",
+   "#PakistaniTraveller",
+   "#NomadZohaib"
+  ],
+  "hook": "Kuta Beach jane se pehle yeh jaan lo 🌊",
+  "q": "Kuta ya Canggu, aap ki choice? 👇",
+  "blog": "bali-day-5-guide"
+ },
+ "scooter": {
+  "files": [
+   "06_Exports/Tips/scooter/01.jpg",
+   "06_Exports/Tips/scooter/02.jpg",
+   "06_Exports/Tips/scooter/03.jpg",
+   "06_Exports/Tips/scooter/04.jpg",
+   "06_Exports/Tips/scooter/05.jpg",
+   "06_Exports/Tips/scooter/06.jpg",
+   "06_Exports/Tips/scooter/07.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/scooter/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/scooter/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/scooter/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/scooter/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/scooter/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/scooter/06.jpg",
+   "https://nomadzohaib.github.io/media/tips/scooter/07.jpg"
+  ],
+  "label": "SCOOTER TIPS",
+  "title": "Bali by scooter 5 rules",
+  "hashtags": [
+   "#BaliScooter",
+   "#Bali",
+   "#ScooterLife",
+   "#BaliTravel",
+   "#TravelTips",
+   "#RoadTrip",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali mein scooter chalana hai? Yeh 5 rules 🛵",
+  "q": "Aap scooter chalate ho ya Grab? 👇",
+  "blog": "kuta-to-canggu-one-day"
+ },
+ "pakistani": {
+  "files": [
+   "06_Exports/Tips/pakistani/01.jpg",
+   "06_Exports/Tips/pakistani/02.jpg",
+   "06_Exports/Tips/pakistani/03.jpg",
+   "06_Exports/Tips/pakistani/04.jpg",
+   "06_Exports/Tips/pakistani/05.jpg",
+   "06_Exports/Tips/pakistani/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/pakistani/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/pakistani/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/pakistani/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/pakistani/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/pakistani/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/pakistani/06.jpg"
+  ],
+  "label": "FOR PAKISTANI TRAVELLERS",
+  "title": "Pakistani in Bali quick tips",
+  "hashtags": [
+   "#PakistaniInBali",
+   "#Pakistan",
+   "#Bali",
+   "#PakistaniTraveller",
+   "#TravelTips",
+   "#BaliTravel",
+   "#NomadZohaib"
+  ],
+  "hook": "Pakistan se Bali ja rahe ho? Yeh save karo 🇵🇰",
+  "q": "Aap kab ja rahe ho Bali? 👇",
+  "blog": "bali-prices-we-paid"
+ },
+ "stay": {
+  "files": [
+   "06_Exports/Tips/stay/01.jpg",
+   "06_Exports/Tips/stay/02.jpg",
+   "06_Exports/Tips/stay/03.jpg",
+   "06_Exports/Tips/stay/04.jpg",
+   "06_Exports/Tips/stay/05.jpg",
+   "06_Exports/Tips/stay/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/stay/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/stay/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/stay/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/stay/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/stay/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/stay/06.jpg"
+  ],
+  "label": "WHERE TO STAY",
+  "title": "Kuta stay: what we did",
+  "hashtags": [
+   "#BaliHotel",
+   "#WhereToStayBali",
+   "#Kuta",
+   "#Bali",
+   "#TravelTips",
+   "#BaliTravel",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali mein kahan rukna chahiye? 🏨",
+  "q": "Aap ek hotel mein rehte ho ya switch? 👇",
+  "blog": "bali-day-5-guide"
+ },
+ "budget": {
+  "files": [
+   "06_Exports/Tips/budget/01.jpg",
+   "06_Exports/Tips/budget/02.jpg",
+   "06_Exports/Tips/budget/03.jpg",
+   "06_Exports/Tips/budget/04.jpg",
+   "06_Exports/Tips/budget/05.jpg",
+   "06_Exports/Tips/budget/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/budget/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/budget/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/budget/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/budget/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/budget/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/budget/06.jpg"
+  ],
+  "label": "MONEY TIPS",
+  "title": "Bali budget smart moves",
+  "hashtags": [
+   "#BaliOnABudget",
+   "#Bali",
+   "#BudgetTravel",
+   "#BaliPrices",
+   "#TravelTips",
+   "#MoneyTips",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali mein paise kaise bachayein? 💰",
+  "q": "Aap ka best money tip kya hai? 👇",
+  "blog": "bali-prices-we-paid"
+ },
+ "sunset_spots": {
+  "files": [
+   "06_Exports/Tips/sunset_spots/01.jpg",
+   "06_Exports/Tips/sunset_spots/02.jpg",
+   "06_Exports/Tips/sunset_spots/03.jpg",
+   "06_Exports/Tips/sunset_spots/04.jpg",
+   "06_Exports/Tips/sunset_spots/05.jpg",
+   "06_Exports/Tips/sunset_spots/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/sunset_spots/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/sunset_spots/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/sunset_spots/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/sunset_spots/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/sunset_spots/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/sunset_spots/06.jpg"
+  ],
+  "label": "SUNSET GUIDE",
+  "title": "Bali sunset where & when",
+  "hashtags": [
+   "#BaliSunset",
+   "#Bali",
+   "#Canggu",
+   "#KutaBeach",
+   "#SunsetLovers",
+   "#TravelTips",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali ka best sunset kahan? 🌅",
+  "q": "Bali sunset ya Maldives sunset? 👇",
+  "blog": "kuta-to-canggu-one-day"
+ },
+ "recap": {
+  "files": [
+   "06_Exports/Tips/recap/01.jpg",
+   "06_Exports/Tips/recap/02.jpg",
+   "06_Exports/Tips/recap/03.jpg",
+   "06_Exports/Tips/recap/04.jpg",
+   "06_Exports/Tips/recap/05.jpg",
+   "06_Exports/Tips/recap/06.jpg"
+  ],
+  "urls": [
+   "https://nomadzohaib.github.io/media/tips/recap/01.jpg",
+   "https://nomadzohaib.github.io/media/tips/recap/02.jpg",
+   "https://nomadzohaib.github.io/media/tips/recap/03.jpg",
+   "https://nomadzohaib.github.io/media/tips/recap/04.jpg",
+   "https://nomadzohaib.github.io/media/tips/recap/05.jpg",
+   "https://nomadzohaib.github.io/media/tips/recap/06.jpg"
+  ],
+  "label": "BALI · DAY 5",
+  "title": "One crazy day in Bali",
+  "hashtags": [
+   "#Bali",
+   "#BaliVlog",
+   "#TravelVlog",
+   "#Canggu",
+   "#Kuta",
+   "#PakistaniTraveller",
+   "#NomadZohaib"
+  ],
+  "hook": "Bali Day 5 ki poori kahani 🎬",
+  "q": "Kaunsa part sab se acha laga? 👇",
+  "blog": "bali-day-5-guide"
+ }
+}
