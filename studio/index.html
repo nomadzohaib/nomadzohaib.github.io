@@ -153,7 +153,8 @@ footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold
 <footer><span>© 2026 NOMAD ZOHAIB</span><span><a href="/privacy.html">PRIVACY</a> · <a href="/terms.html">TERMS</a> · <a href="mailto:nomadzohaib@gmail.com">CONTACT</a></span></footer>
 
 <script>
-const API = "http://127.0.0.1:8787";
+const LOCAL = location.host === "127.0.0.1:8787";          // same screen served by the helper itself
+const API = LOCAL ? "" : "http://127.0.0.1:8787";
 const PRIV = {PUBLIC_TO_EVERYONE:"Everyone", MUTUAL_FOLLOW_FRIENDS:"Friends", FOLLOWER_OF_CREATOR:"Followers", SELF_ONLY:"Only me"};
 const MUSIC = '<a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>';
 const BRANDED = '<a href="https://www.tiktok.com/legal/page/global/bc-policy/en" target="_blank" rel="noopener">Branded Content Policy</a>';
@@ -196,7 +197,7 @@ async function boot() {
 }
 
 $("login").onclick = () => {
-  const p = new URLSearchParams({client_key: cfg.client_key, scope: cfg.scopes, response_type: "code", redirect_uri: cfg.redirect_uri, state: "studio"});
+  const p = new URLSearchParams({client_key: cfg.client_key, scope: cfg.scopes, response_type: "code", redirect_uri: cfg.redirect_uri, state: LOCAL ? "studio-local" : "studio"});
   location.href = "https://www.tiktok.com/v2/auth/authorize/?" + p;
 };
 
