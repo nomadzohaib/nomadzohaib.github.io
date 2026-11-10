@@ -1,0 +1,66 @@
+name: Autopost (laptop can be off)
+on:
+  schedule:
+    - cron: "5,35 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: autopost
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      NZ_CLOUD: "1"
+      META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+      YOUTUBE_VLOG_URL: ${{ secrets.YOUTUBE_VLOG_URL }}
+      YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r autopost/Tools/autopost/requirements.txt
+      - name: Anything due?
+        id: chk
+        working-directory: autopost
+        run: |
+          echo "due=$(python Tools/autopost/post.py --pending)" >> "$GITHUB_OUTPUT"
+          if [ -f CHECK_ONCE ]; then echo "check=yes" >> "$GITHUB_OUTPUT"; fi
+      - name: One-time connection check (posts nothing)
+        if: steps.chk.outputs.check == 'yes'
+        working-directory: autopost
+        run: |
+          python Tools/autopost/post.py --check | tee -a 05_Work/autopost/post_log.txt
+          git rm -q CHECK_ONCE
+      - name: Install ffmpeg
+        if: steps.chk.outputs.due == 'yes'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Post what is due
+        if: steps.chk.outputs.due == 'yes'
+        working-directory: autopost
+        run: python Tools/autopost/post.py --due
+      - name: Save schedule + log
+        if: always() && (steps.chk.outputs.due == 'yes' || steps.chk.outputs.check == 'yes')
+        run: |
+          git config user.name "nomadzohaib-autopost"
+          git config user.email "actions@users.noreply.github.com"
+          git add autopost/05_Work/autopost/schedule.json autopost/05_Work/autopost/post_log.txt 2>/dev/null || true
+          git add -u autopost
+          git diff --cached --quiet || git commit -q -m "autopost: update schedule [skip ci]"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+      - name: Keep TikTok login fresh
+        if: always() && (steps.chk.outputs.due == 'yes' || steps.chk.outputs.check == 'yes')
+        env:
+          GH_TOKEN: ${{ secrets.NZ_PAT }}
+        run: |
+          new=$(grep -E '^TIKTOK_REFRESH_TOKEN=' autopost/.env 2>/dev/null | tail -1 | cut -d= -f2-)
+          if [ -n "$new" ] && [ "$new" != "$TIKTOK_REFRESH_TOKEN" ]; then
+            printf '%s' "$new" | gh secret set TIKTOK_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY"
+            echo "TikTok token rotated and saved"
+          fi
