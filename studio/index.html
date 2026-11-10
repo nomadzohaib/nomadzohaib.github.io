@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nomad Zohaib Studio · Publish to TikTok</title>
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0b0d;--ink2:#141418;--ink3:#1b1b20;--paper:#f6f1e8;--gold:#d9b273;--gold2:#f2d29c;--muted:#9a948a;--line:rgba(242,210,156,.2);--red:#fe2c55;
+--serif:"Bodoni Moda",Georgia,serif;--sans:"Inter",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--gold2)}button{font:inherit;color:inherit;cursor:pointer}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px clamp(20px,4vw,48px);border-bottom:1px solid var(--line)}
+.brand{display:flex;gap:12px;align-items:center;font-family:var(--serif);letter-spacing:.12em;color:var(--paper);text-decoration:none}.brand img{width:36px;height:36px;border-radius:50%}
+.brand small{font-family:var(--mono);font-size:10px;letter-spacing:.3em;color:var(--gold);margin-left:6px}
+.pill{font-family:var(--mono);font-size:11px;letter-spacing:.14em;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--muted)}
+.pill.ok{color:#8fe3a8;border-color:rgba(143,227,168,.35)}.pill.bad{color:#ffb1a8;border-color:rgba(255,177,168,.35)}
+main{max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,56px) clamp(20px,4vw,48px) 80px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5vw,60px);line-height:1.02;margin:14px 0 10px}h1 em{font-style:italic;color:var(--gold2)}
+.lead{color:#cfc7b9;max-width:620px;line-height:1.6}
+.steps{display:flex;gap:10px;margin:28px 0 30px;flex-wrap:wrap}
+.step{font-family:var(--mono);font-size:11px;letter-spacing:.16em;padding:9px 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.step.on{background:var(--gold);color:var(--ink);border-color:var(--gold)}.step.done{color:var(--gold2)}
+.panel{background:var(--ink2);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,32px)}
+.hide{display:none!important}
+.center{text-align:center;padding:48px 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;border:0;font-weight:500;font-size:14px;letter-spacing:.08em;transition:.25s}
+.btn--tt{background:#fff;color:#000}.btn--tt:hover{background:var(--gold2)}
+.btn--post{background:var(--red);color:#fff;width:100%;font-size:15px;padding:17px}.btn--post:disabled{background:#3a3a40;color:#8a8a90;cursor:not-allowed}
+.btn--ghost{background:none;border:1px solid var(--line);color:var(--paper)}.btn--ghost:hover{border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:330px 1fr;gap:clamp(20px,3vw,36px)}@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.who{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--ink3);margin-bottom:22px}
+.who img{width:46px;height:46px;border-radius:50%;object-fit:cover;background:#333}.who b{font-weight:500;display:block}.who span{font-size:13px;color:var(--muted)}
+.who small{margin-left:auto;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--gold)}
+.phone{aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;border:1px solid var(--line);position:relative}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+.phone .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:13px;text-align:center;padding:20px}
+.meta{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-top:10px;display:flex;justify-content:space-between}
+label.f{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:22px 0 9px}
+label.f:first-child{margin-top:0}
+select,textarea{width:100%;background:var(--ink3);border:1px solid var(--line);border-radius:12px;color:var(--paper);font:inherit;font-size:15px;padding:13px 14px;outline:none}
+select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:104px;resize:vertical;line-height:1.5}
+.count{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;margin-top:5px}
+.checks{display:flex;gap:10px;flex-wrap:wrap}
+.chk{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14px;cursor:pointer;user-select:none}
+.chk input{accent-color:var(--gold);width:17px;height:17px}.chk.off{opacity:.38;cursor:not-allowed}
+.row{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.sw{position:relative;width:48px;height:27px;flex:none}.sw input{opacity:0;width:100%;height:100%;position:absolute;inset:0;margin:0;cursor:pointer;z-index:2}
+.sw i{position:absolute;inset:0;border-radius:999px;background:#3a3a40;transition:.2s}.sw i::after{content:"";position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:50%;background:#fff;transition:.2s}
+.sw input:checked+i{background:var(--gold)}.sw input:checked+i::after{transform:translateX(21px)}
+.sub{font-size:13px;color:var(--muted);line-height:1.5;margin-top:6px}
+.note{font-size:13px;line-height:1.5;border-left:2px solid var(--gold);background:rgba(217,178,115,.08);padding:11px 14px;border-radius:0 10px 10px 0;margin-top:12px;color:#e6dccb}
+.warn{border-left-color:#ffb1a8;background:rgba(255,177,168,.08);color:#ffd2cc}
+.consent{font-size:13px;color:#cfc7b9;line-height:1.55;margin:24px 0 14px}
+.done-ic{width:76px;height:76px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;margin:0 auto 20px;font-size:32px;color:var(--gold2)}
+.spin{width:38px;height:38px;border-radius:50%;border:2px solid var(--line);border-top-color:var(--gold);animation:sp 1s linear infinite;margin:0 auto 18px}@keyframes sp{to{transform:rotate(360deg)}}
+footer{border-top:1px solid var(--line);padding:26px clamp(20px,4vw,48px);font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted);display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold2)}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/"><img src="/media/logo_512.png" alt=""><span>NOMAD ZOHAIB</span><small>STUDIO</small></a>
+  <span class="pill" id="helper">CHECKING HELPER…</span>
+</header>
+
+<main>
+  <div class="eyebrow">Publish to TikTok</div>
+  <h1>From the edit <em>to your profile.</em></h1>
+  <p class="lead">Nomad Zohaib Studio publishes our finished travel reels to our TikTok account. Sign in, preview the reel, choose who can see it, and post.</p>
+
+  <div class="steps"><span class="step on" id="s1">1 · CONNECT</span><span class="step" id="s2">2 · REVIEW &amp; SETTINGS</span><span class="step" id="s3">3 · POSTED</span></div>
+
+  <!-- helper offline -->
+  <section class="panel center hide" id="offline">
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:28px;margin-bottom:10px">Start the Studio helper</h2>
+    <p class="lead" style="margin:0 auto 20px">This screen works together with the Nomad Zohaib Studio helper on this computer, which stores the videos and uploads them. Start the helper, then try again.</p>
+    <button class="btn btn--ghost" onclick="boot()">TRY AGAIN</button>
+  </section>
+
+  <!-- 1 connect -->
+  <section class="panel center hide" id="connect">
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:30px;margin-bottom:10px">Connect your TikTok account</h2>
+    <p class="lead" style="margin:0 auto 26px">You'll be taken to TikTok to sign in and approve. We ask for your basic profile (to show which account you're posting to) and permission to upload and publish videos you choose here.</p>
+    <button class="btn btn--tt" id="login">
+      <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M16 3c.3 2.4 1.7 3.9 4 4.2v3.3c-1.5 0-2.8-.4-4-1.2v6.2a5.5 5.5 0 1 1-5.5-5.5h.5v3.4a2.2 2.2 0 1 0 1.6 2.1V3z"/></svg>
+      Continue with TikTok</button>
+    <p class="sub" id="cmsg" style="margin-top:18px"></p>
+  </section>
+
+  <!-- 2 compose -->
+  <section class="hide" id="compose">
+    <div class="who"><img id="avatar" alt=""><div><b id="nick">…</b><span id="user"></span></div><small>POSTING TO THIS ACCOUNT</small></div>
+    <div class="grid">
+      <div>
+        <div class="phone"><video id="vid" controls playsinline preload="metadata"></video><div class="ph" id="vph">Choose a reel to preview it here.</div></div>
+        <div class="meta"><span id="vlen">–</span><span id="vsize"></span></div>
+      </div>
+      <div class="panel">
+        <label class="f" for="reel">Video</label>
+        <select id="reel"><option value="">Choose a reel…</option></select>
+        <div class="note warn hide" id="toolong"></div>
+
+        <label class="f" for="title">Caption</label>
+        <textarea id="title" maxlength="2200" placeholder="Write a caption…"></textarea>
+        <div class="count"><span id="cc">0</span> / 2200</div>
+
+        <label class="f" for="privacy">Who can view this video</label>
+        <select id="privacy"><option value="" selected disabled>Select who can view…</option></select>
+
+        <label class="f">Allow users to</label>
+        <div class="checks">
+          <label class="chk" id="lc"><input type="checkbox" id="c_comment"> Comment</label>
+          <label class="chk" id="ld"><input type="checkbox" id="c_duet"> Duet</label>
+          <label class="chk" id="ls"><input type="checkbox" id="c_stitch"> Stitch</label>
+        </div>
+        <p class="sub" id="intnote"></p>
+
+        <label class="f">Disclose video content</label>
+        <div class="row"><p class="sub" style="margin:0">Turn on to disclose that this video promotes goods or services in exchange for something of value. Your video could promote yourself, a third party, or both.</p>
+          <span class="sw"><input type="checkbox" id="disclose" aria-label="Disclose video content"><i></i></span></div>
+        <div class="hide" id="brandbox" style="margin-top:14px">
+          <div class="checks">
+            <label class="chk"><input type="checkbox" id="b_own"> Your brand</label>
+            <label class="chk" id="lb"><input type="checkbox" id="b_paid"> Branded content</label>
+          </div>
+          <p class="sub">Your brand: you are promoting yourself or your own business. Branded content: you are promoting another brand or a third party.</p>
+          <div class="note hide" id="blabel"></div>
+          <div class="note warn hide" id="bneed">You need to indicate if your content promotes yourself, a third party, or both.</div>
+        </div>
+
+        <p class="consent" id="consent"></p>
+        <button class="btn btn--post" id="post" disabled>Post to TikTok</button>
+        <p class="sub" id="why" style="text-align:center;margin-top:10px"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 result -->
+  <section class="panel center hide" id="result">
+    <div id="rspin" class="spin"></div><div id="rdone" class="done-ic hide">✓</div>
+    <h2 id="rt" style="font-family:var(--serif);font-weight:400;font-size:30px;margin-bottom:10px">Uploading to TikTok…</h2>
+    <p class="lead" id="rm" style="margin:0 auto 24px">Keep this page open.</p>
+    <button class="btn btn--ghost hide" id="again">POST ANOTHER REEL</button>
+  </section>
+</main>
+
+<footer><span>© 2026 NOMAD ZOHAIB</span><span><a href="/privacy.html">PRIVACY</a> · <a href="/terms.html">TERMS</a> · <a href="mailto:nomadzohaib@gmail.com">CONTACT</a></span></footer>
+
+<script>
+const API = "http://127.0.0.1:8787";
+const PRIV = {PUBLIC_TO_EVERYONE:"Everyone", MUTUAL_FOLLOW_FRIENDS:"Friends", FOLLOWER_OF_CREATOR:"Followers", SELF_ONLY:"Only me"};
+const MUSIC = '<a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>';
+const BRANDED = '<a href="https://www.tiktok.com/legal/page/global/bc-policy/en" target="_blank" rel="noopener">Branded Content Policy</a>';
+const $ = id => document.getElementById(id);
+let cfg = null, creator = null, list = [];
+
+const show = id => ["offline","connect","compose","result"].forEach(x => $(x).classList.toggle("hide", x !== id));
+const step = n => [1,2,3].forEach(i => { $("s"+i).className = "step" + (i === n ? " on" : i < n ? " done" : ""); });
+async function api(path, body) {
+  const r = await fetch(API + path, {method: body ? "POST" : "GET", headers: {"Content-Type":"application/json", ...(cfg ? {"X-NZ-Key": cfg.key} : {})},
+                                     body: body ? JSON.stringify(body) : undefined});
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || "Something went wrong");
+  return j;
+}
+
+async function boot() {
+  try { cfg = await api("/api/config"); }
+  catch { $("helper").textContent = "HELPER OFFLINE"; $("helper").className = "pill bad"; step(1); return show("offline"); }
+  $("helper").textContent = cfg.sandbox ? "HELPER ONLINE · SANDBOX" : "HELPER ONLINE"; $("helper").className = "pill ok";
+  const q = new URLSearchParams(location.search), code = q.get("code");
+  if (code) {                                             // just came back from TikTok
+    history.replaceState(null, "", location.pathname);
+    try { const r = await api("/api/exchange", {code}); cfg.connected = true; cfg.granted = r.granted; }
+    catch (e) { step(1); show("connect"); $("cmsg").textContent = "TikTok sign-in did not complete: " + e.message; return; }
+  }
+  if (!(q.get("preview") && location.hostname === "localhost") && (!cfg.connected || !(cfg.granted || "").includes("video.publish"))) {
+    step(1); show("connect");
+    if (cfg.connected) $("cmsg").textContent = "Your account is connected for drafts only. Continue with TikTok once more to allow posting.";
+    return;
+  }
+  if (q.get("preview") && location.hostname === "localhost") {   // layout check on the dev machine only: sample creator, real reel list
+    creator = {creator_nickname: "Preview creator", creator_username: "preview", privacy_level_options: ["PUBLIC_TO_EVERYONE","MUTUAL_FOLLOW_FRIENDS","SELF_ONLY"],
+               duet_disabled: true, max_video_post_duration_sec: 600};
+    list = await api("/api/reels"); return compose();
+  }
+  try { creator = await api("/api/creator"); list = await api("/api/reels"); }
+  catch (e) { step(1); show("connect"); $("cmsg").textContent = "Please sign in again: " + e.message; return; }
+  compose();
+}
+
+$("login").onclick = () => {
+  const p = new URLSearchParams({client_key: cfg.client_key, scope: cfg.scopes, response_type: "code", redirect_uri: cfg.redirect_uri, state: "studio"});
+  location.href = "https://www.tiktok.com/v2/auth/authorize/?" + p;
+};
+
+function compose() {
+  step(2); show("compose");
+  $("avatar").src = creator.creator_avatar_url || "/media/logo_512.png";
+  $("nick").textContent = creator.creator_nickname || "TikTok creator";
+  $("user").textContent = creator.creator_username ? "@" + creator.creator_username : "";
+  $("reel").innerHTML = '<option value="">Choose a reel…</option>' + list.map(r => `<option value="${r.id}">${r.label.replace(/</g,"&lt;")}</option>`).join("");
+  $("privacy").innerHTML = '<option value="" selected disabled>Select who can view…</option>' +
+    (creator.privacy_level_options || []).map(p => `<option value="${p}">${PRIV[p] || p}</option>`).join("");
+  const dis = [["comment","lc","Comments"],["duet","ld","Duet"],["stitch","ls","Stitch"]].filter(([k, l]) => {
+    const off = !!creator[k + "_disabled"]; $("c_" + k).checked = false; $("c_" + k).disabled = off; $(l).classList.toggle("off", off); return off; });
+  $("intnote").textContent = dis.length ? dis.map(d => d[2]).join(", ") + " turned off in your TikTok settings." : "";
+  $("disclose").checked = $("b_own").checked = $("b_paid").checked = false; $("title").value = ""; $("vid").removeAttribute("src"); $("vph").classList.remove("hide");
+  refresh();
+}
+
+$("reel").onchange = () => {
+  const r = list.find(x => x.id === $("reel").value);
+  if (!r) { $("vid").removeAttribute("src"); $("vid").load(); $("vph").classList.remove("hide"); $("vlen").textContent = "–"; $("vsize").textContent = ""; return refresh(); }
+  $("vid").src = `${API}/api/video?id=${encodeURIComponent(r.id)}&k=${encodeURIComponent(cfg.key)}#t=1.5`; $("vph").classList.add("hide");
+  $("title").value = r.caption; $("vlen").textContent = r.seconds + " s"; $("vsize").textContent = r.mb + " MB";
+  refresh();
+};
+["title","privacy","disclose","b_own","b_paid"].forEach(id => $(id).addEventListener("input", refresh));
+
+function refresh() {
+  const r = list.find(x => x.id === $("reel").value), max = creator?.max_video_post_duration_sec || 600;
+  const tooLong = r && r.seconds > max;
+  $("toolong").classList.toggle("hide", !tooLong);
+  if (tooLong) $("toolong").textContent = `This video is ${r.seconds} s. Your TikTok account can post up to ${max} s.`;
+  $("cc").textContent = $("title").value.length;
+  const disc = $("disclose").checked, own = $("b_own").checked, paid = $("b_paid").checked;
+  $("brandbox").classList.toggle("hide", !disc);
+  // branded content can never be private
+  const only = [...$("privacy").options].find(o => o.value === "SELF_ONLY");
+  if (only) { only.disabled = disc && paid; only.textContent = "Only me" + (disc && paid ? " (not available for branded content)" : ""); }
+  const priv = $("privacy").value, lockPaid = priv === "SELF_ONLY" && !paid;
+  $("b_paid").disabled = lockPaid; $("lb").classList.toggle("off", lockPaid);
+  $("lb").title = lockPaid ? "Branded content visibility cannot be set to private." : "";
+  $("blabel").classList.toggle("hide", !(disc && (own || paid)));
+  $("blabel").textContent = paid ? "Your video will be labeled as “Paid partnership”." : "Your video will be labeled as “Promotional content”.";
+  $("bneed").classList.toggle("hide", !(disc && !own && !paid));
+  $("consent").innerHTML = "By posting, you agree to TikTok's " + (disc && paid ? BRANDED + " and " + MUSIC : MUSIC) + ".";
+  const why = !r ? "Choose a reel." : tooLong ? "This video is too long for your account." : !priv ? "Choose who can view this video." :
+              disc && !own && !paid ? "Choose what your content promotes." : "";
+  $("why").textContent = why; $("post").disabled = !!why;
+}
+
+$("post").onclick = async () => {
+  const body = {id: $("reel").value, title: $("title").value, privacy_level: $("privacy").value,
+    disable_comment: !$("c_comment").checked, disable_duet: !$("c_duet").checked, disable_stitch: !$("c_stitch").checked,
+    brand_organic: $("disclose").checked && $("b_own").checked, brand_content: $("disclose").checked && $("b_paid").checked};
+  step(3); show("result");
+  $("rspin").classList.remove("hide"); $("rdone").classList.add("hide"); $("again").classList.add("hide");
+  $("rt").textContent = "Uploading to TikTok…"; $("rm").textContent = "Keep this page open.";
+  try {
+    const {publish_id} = await api("/api/publish", body);
+    $("rt").textContent = "TikTok is processing your video…";
+    for (let i = 0; i < 40; i++) {
+      await new Promise(r => setTimeout(r, 4000));
+      const s = await api("/api/status?publish_id=" + encodeURIComponent(publish_id));
+      if (s.status === "PUBLISH_COMPLETE") return finish(true, "Posted to TikTok", "Your video is on @" + (creator.creator_username || "your profile") + ". It can take a few minutes to show up there.");
+      if (s.status === "FAILED") return finish(false, "TikTok could not post this video", s.fail_reason || "Please try again.");
+    }
+    finish(true, "Sent to TikTok", "TikTok is still processing the video. It will appear on your profile in a few minutes.");
+  } catch (e) { finish(false, "Could not post", e.message); }
+};
+function finish(ok, t, m) {
+  $("rspin").classList.add("hide"); $("rdone").classList.remove("hide"); $("rdone").textContent = ok ? "✓" : "!";
+  $("rt").textContent = t; $("rm").textContent = m; $("again").classList.remove("hide");
+}
+$("again").onclick = compose;
+boot();
+</script>
+</body>
+</html>
