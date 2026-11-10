@@ -110,6 +110,7 @@ a{color:inherit;text-decoration:none}img,video,iframe{display:block;max-width:10
 .meta{display:flex;gap:18px;font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.1em;margin:20px 0 30px}
 @media (max-width:900px){.feature{grid-template-columns:1fr}}
 
+.guide .gimg{aspect-ratio:4/5;overflow:hidden;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.45)}.guide .gimg img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}.guide:hover .gimg img{transform:scale(1.06)}.guide small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--gold-2);margin-top:18px}
 /* films grid */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,34px);margin-top:60px}
 .card{display:block;cursor:pointer}
@@ -226,7 +227,7 @@ footer a:hover{color:var(--gold-2)}footer nav{display:flex;gap:24px;flex-wrap:wr
 
 <header class="nav" id="nav">
   <a class="brand" href="#top"><img src="media/logo_512.png" alt="Nomad Zohaib logo"><span>NOMAD ZOHAIB</span></a>
-  <nav class="nav__links"><a href="#films">Films</a><a href="#shorts">Shorts</a><a href="#about">About</a><a href="#support">Support</a><a href="#contact">Contact</a></nav>
+  <nav class="nav__links"><a href="#films">Films</a><a href="#shorts">Shorts</a><a href="#guides">Blog</a><a href="#about">About</a><a href="#support">Support</a><a href="#contact">Contact</a></nav>
   <div class="nav__right">
     <div class="nav__icons">
       <a class="ico" data-link="instagram" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
@@ -300,8 +301,21 @@ footer a:hover{color:var(--gold-2)}footer nav{display:flex;gap:24px;flex-wrap:wr
 </section>
 
 <!-- ABOUT -->
-<section class="sec" id="about">
-  <div class="wrap about">
+<section class="sec" id="guides">
+  <div class="wrap">
+    <div class="head-row">
+      <div><div class="eyebrow reveal">The Nomad Journal</div><h2 class="h2" data-split-lines>Travel <em>guides</em></h2></div>
+      <a class="link-arrow reveal" href="blog/">ALL GUIDES →</a>
+    </div>
+    <div class="grid">
+      <a class="card guide reveal" href="blog/bali-prices-we-paid.html"><div class="gimg"><img src="media/tips/prices/01.jpg" alt="Bali prices we paid" loading="lazy"></div><small>MONEY · BALI</small><h4>Bali Prices 2026: What We Really Paid in Kuta (with PKR)</h4></a>
+      <a class="card guide reveal" href="blog/kuta-to-canggu-one-day.html"><div class="gimg"><img src="media/tips/itinerary/01.jpg" alt="Kuta to Canggu itinerary" loading="lazy"></div><small>ITINERARY · BALI</small><h4>Kuta to Canggu in One Day: 5-Stop Bali Itinerary</h4></a>
+      <a class="card guide reveal" href="blog/bali-day-5-guide.html"><div class="gimg"><img src="media/tips/recap/01.jpg" alt="Bali Day 5 guide" loading="lazy"></div><small>TRAVEL DIARY · BALI</small><h4>Bali Day 5: Kuta, Labubu Village, Kuta Beach &amp; a FINNS Sunset</h4></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">  <div class="wrap about">
     <div class="about__wrapimg reveal"><div class="about__ring"></div><div class="about__img"><img src="logo.png" alt="Nomad Zohaib illustrated portrait" loading="lazy"></div></div>
     <div>
       <div class="eyebrow reveal">About</div>
