@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: "5,35 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["autopost/CHECK_ONCE", "autopost/RUN_NOW"]
 concurrency:
   group: autopost
   cancel-in-progress: false
@@ -32,6 +35,7 @@ jobs:
         run: |
           echo "due=$(python Tools/autopost/post.py --pending)" >> "$GITHUB_OUTPUT"
           if [ -f CHECK_ONCE ]; then echo "check=yes" >> "$GITHUB_OUTPUT"; fi
+          git rm -q --ignore-unmatch RUN_NOW || true
       - name: One-time connection check (posts nothing)
         if: steps.chk.outputs.check == 'yes'
         working-directory: autopost
