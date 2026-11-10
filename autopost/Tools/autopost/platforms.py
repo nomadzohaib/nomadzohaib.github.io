@@ -160,6 +160,40 @@ def ig_upload(path, caption):
     return {"id": m["id"], "url": link}
 
 
+def ig_story(path=None, image_url=None):
+    """Instagram Story: a reel video (resumable upload) or a carousel cover image (public URL)."""
+    tok, ig, _ = meta()
+    g = f"https://graph.facebook.com/{GV()}"
+    if image_url:
+        c = _g("POST", f"{g}/{ig}/media", data={"media_type": "STORIES", "image_url": image_url, "access_token": tok})
+    else:
+        c = _g("POST", f"{g}/{ig}/media", data={"media_type": "STORIES", "upload_type": "resumable", "access_token": tok})
+        with open(path, "rb") as fh:
+            _g("POST", f"https://rupload.facebook.com/ig-api-upload/{GV()}/{c['id']}",
+               headers={"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(Path(path).stat().st_size)}, data=fh)
+    for _ in range(60):
+        st = _g("GET", f"{g}/{c['id']}", params={"fields": "status_code", "access_token": tok})
+        if st.get("status_code") == "FINISHED":
+            break
+        if st.get("status_code") == "ERROR":
+            raise RuntimeError(f"IG story processing error: {st}")
+        time.sleep(5)
+    m = _g("POST", f"{g}/{ig}/media_publish", data={"creation_id": c["id"], "access_token": tok})
+    return {"id": m["id"]}
+
+
+def fb_story(path):
+    """Facebook Page Story from a reel video."""
+    tok, _, page = meta()
+    g = f"https://graph.facebook.com/{GV()}"
+    s = _g("POST", f"{g}/{page}/video_stories", data={"upload_phase": "start", "access_token": tok})
+    with open(path, "rb") as fh:
+        _g("POST", s.get("upload_url") or f"https://rupload.facebook.com/video-upload/{GV()}/{s['video_id']}",
+           headers={"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(Path(path).stat().st_size)}, data=fh)
+    r = _g("POST", f"{g}/{page}/video_stories", data={"upload_phase": "finish", "video_id": s["video_id"], "access_token": tok})
+    return {"id": r.get("post_id") or s["video_id"]}
+
+
 def ig_comment(media_id, text):
     tok, _, _ = meta()
     _g("POST", f"https://graph.facebook.com/{GV()}/{media_id}/comments", data={"message": text, "access_token": tok})
