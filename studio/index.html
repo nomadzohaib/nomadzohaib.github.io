@@ -95,7 +95,7 @@ footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold
 
   <!-- 2 compose -->
   <section class="hide" id="compose">
-    <div class="who"><img id="avatar" alt=""><div><b id="nick">…</b><span id="user"></span></div><small>POSTING TO THIS ACCOUNT</small></div>
+    <div class="who"><img id="avatar" alt=""><div><b id="nick">…</b><span id="user"></span></div><small>POSTING TO THIS ACCOUNT · <a href="#" id="signout" style="letter-spacing:.2em">SIGN OUT</a></small></div>
     <div class="grid">
       <div>
         <div class="phone"><video id="vid" controls playsinline preload="metadata"></video><div class="ph" id="vph">Choose a reel to preview it here.</div></div>
@@ -272,6 +272,7 @@ function finish(ok, t, m) {
   $("rt").textContent = t; $("rm").textContent = m; $("again").classList.remove("hide");
 }
 $("again").onclick = compose;
+$("signout").onclick = async e => { e.preventDefault(); await api("/api/signout", {}); location.href = location.pathname; };
 boot();
 </script>
 </body>
