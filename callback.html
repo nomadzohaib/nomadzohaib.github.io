@@ -26,6 +26,7 @@
 <script>
   const q = new URLSearchParams(location.search);
   const code = q.get("code"), err = q.get("error_description") || q.get("error");
+  if (code && q.get("state") === "studio-local") { location.replace("http://127.0.0.1:8787/?code=" + encodeURIComponent(code)); }
   if (code && q.get("state") === "studio") { location.replace("/studio/?code=" + encodeURIComponent(code)); }   // sign-in started from the Studio screen
   if (code) { document.getElementById("c").textContent = code; }
   else {
