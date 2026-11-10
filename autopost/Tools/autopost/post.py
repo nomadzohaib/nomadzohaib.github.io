@@ -109,6 +109,11 @@ def post_image(p, platform, dry):
             P.ig_comment(r["id"], post["q"])
         except Exception as e:
             log(f"   instagram comment skipped: {str(e)[:100]}")
+        try:                                              # cover slide to the Story
+            r["story"] = P.ig_story(image_url=post["urls"][0])["id"]
+            log("   instagram story posted")
+        except Exception as e:
+            log(f"   instagram story skipped: {str(e)[:120]}")
         return r
     if platform == "facebook":
         files = [ROOT / f for f in post["files"]]
@@ -178,9 +183,20 @@ def post_one(p, platform, dry):
             P.ig_comment(r["id"], CAP.pinned_comment(c))
         except Exception as e:
             log(f"   instagram comment skipped: {str(e)[:100]}")
+        try:                                              # same reel to the Story: reaches followers a second time
+            r["story"] = P.ig_story(f)["id"]
+            log("   instagram story posted")
+        except Exception as e:
+            log(f"   instagram story skipped: {str(e)[:120]}")
         return r
     if platform == "facebook":
-        return P.fb_upload(f, CAP.caption(c, "facebook", yt_url))
+        r = P.fb_upload(f, CAP.caption(c, "facebook", yt_url))
+        try:
+            r["story"] = P.fb_story(f)["id"]
+            log("   facebook story posted")
+        except Exception as e:
+            log(f"   facebook story skipped: {str(e)[:120]}")
+        return r
     if platform == "tiktok" and P.env().get("TIKTOK_DIRECT") == "1":
         # Direct Post: only switch on (TIKTOK_DIRECT=1 in .env) after TikTok has approved + audited the app.
         info = P.tt_creator()
