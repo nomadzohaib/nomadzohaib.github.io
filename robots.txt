@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nomadzohaib.github.io/sitemap.xml
