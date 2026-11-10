@@ -178,6 +178,29 @@ def ig_stats(media_id):
     return out
 
 
+def fb_video(path, caption, title=""):
+    """Normal Page video post (graph-video.facebook.com /{page}/videos). Shows in the Page feed in the mobile app;
+    Facebook turns vertical short videos into Reels itself."""
+    tok, _, page = meta()
+    if not page:
+        raise Skip("FB_PAGE_ID missing in .env")
+    with open(path, "rb") as fh:
+        r = _g("POST", f"https://graph-video.facebook.com/{GV()}/{page}/videos",
+               data={"description": caption, "title": title[:250], "published": "true", "access_token": tok},
+               files={"source": (Path(path).name, fh, "video/mp4")})
+    vid = r["id"]
+    for _ in range(60):                                  # wait until Facebook has processed and published it
+        st = _g("GET", f"https://graph.facebook.com/{GV()}/{vid}", params={"fields": "status,permalink_url", "access_token": tok})
+        s = st.get("status", {})
+        if s.get("video_status") == "ready" and s.get("publishing_phase", {}).get("publish_status") == "published":
+            break
+        if s.get("video_status") == "error":
+            raise RuntimeError(f"Facebook video processing error: {s}")
+        time.sleep(5)
+    link = st.get("permalink_url", "")
+    return {"id": vid, "url": ("https://www.facebook.com" + link) if link.startswith("/") else (link or f"https://www.facebook.com/{vid}")}
+
+
 def fb_upload(path, caption):
     tok, _, page = meta()
     if not page:
