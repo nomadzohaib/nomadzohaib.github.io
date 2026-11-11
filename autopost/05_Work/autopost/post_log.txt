@@ -48,3 +48,7 @@ RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError
 2026-11-11 22:33 story_p3/cine: quality gate PASS
 2026-11-11 22:35    instagram story posted
 2026-11-11 22:35 story_p3/cine -> instagram: https://www.instagram.com/reel/DfnByNViP5r/
+youtube    OK   Nomad Zohaib
+facebook   OK   Page Nomad Zohaib
+instagram  OK   nomadzohaib.666
+tiktok     OK   token ok
