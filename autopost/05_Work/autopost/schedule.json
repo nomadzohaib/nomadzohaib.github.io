@@ -232,7 +232,25 @@
   "time": "evening",
   "file_music": "06_Exports/Reels/story_p3_cine_music.mp4",
   "file_clean": "06_Exports/Reels/story_p3_cine_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "75MuI5T0yNQ",
+    "url": "https://youtube.com/shorts/75MuI5T0yNQ",
+    "at": "2026-11-11T21:55:29.107233+05:00"
+   },
+   "facebook": {
+    "id": "1127025896778267",
+    "url": "https://www.facebook.com/reel/1127025896778267",
+    "story": "28722744190760543",
+    "at": "2026-11-11T21:56:25.496138+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7706958561338738695",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Part 3: Kuta Beach pe 'Oh, Pakistan!' 🇵🇰 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #pakistan #bali #kutabeach #storytime #traveltok",
+    "at": "2026-11-11T21:56:34.269634+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-11T20:00:00+05:00",
@@ -240,7 +258,19 @@
   "concept": "finns",
   "style": "carousel",
   "time": "image",
-  "posted": {}
+  "posted": {
+   "instagram": {
+    "id": "18099232754447763",
+    "url": "https://www.instagram.com/p/Dfm9kFlGr05/",
+    "story": "18125230663938576",
+    "at": "2026-11-11T21:57:28.932800+05:00"
+   },
+   "facebook": {
+    "id": "862999883574148_122149201263208626",
+    "url": "https://www.facebook.com/862999883574148_122149201263208626",
+    "at": "2026-11-11T21:57:42.072975+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-12T14:00:00+05:00",

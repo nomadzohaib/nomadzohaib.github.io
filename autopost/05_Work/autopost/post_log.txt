@@ -23,3 +23,25 @@ tiktok     OK   token ok
 2026-11-11 16:59    facebook story posted
 2026-11-11 16:59 tips_itinerary/bold -> facebook: https://www.facebook.com/reel/2177110706251834
 2026-11-11 16:59 tips_itinerary/bold -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post
+2026-11-11 21:55 story_p3/cine: quality gate PASS
+2026-11-11 21:55 story_p3/cine -> youtube: https://youtube.com/shorts/75MuI5T0yNQ
+2026-11-11 21:56 story_p3/cine -> instagram: FAILED 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}
+Traceback (most recent call last):
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/post.py", line 239, in due
+    r = post_one(p, pf, dry)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/post.py", line 181, in post_one
+    r = P.ig_upload(f, CAP.caption(c, "instagram", yt_url))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/platforms.py", line 149, in ig_upload
+    _g("POST", f"https://rupload.facebook.com/ig-api-upload/{GV()}/{cid}",
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/platforms.py", line 135, in _g
+    raise RuntimeError(f"{r.status_code} {r.text[:400]}")
+RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}
+
+2026-11-11 21:56    facebook story posted
+2026-11-11 21:56 story_p3/cine -> facebook: https://www.facebook.com/reel/1127025896778267
+2026-11-11 21:56 story_p3/cine -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post
+2026-11-11 21:57    instagram story posted
+2026-11-11 21:57 finns/carousel -> instagram: https://www.instagram.com/p/Dfm9kFlGr05/
+2026-11-11 21:57 finns/carousel -> facebook: https://www.facebook.com/862999883574148_122149201263208626
