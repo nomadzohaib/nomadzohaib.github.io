@@ -144,7 +144,31 @@
   "time": "afternoon",
   "file_music": "06_Exports/Reels/coconut_bold_music.mp4",
   "file_clean": "06_Exports/Reels/coconut_bold_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "Bik_lPBAQAc",
+    "url": "https://youtube.com/shorts/Bik_lPBAQAc",
+    "at": "2026-11-11T13:59:18.533808+05:00"
+   },
+   "instagram": {
+    "id": "18110872622628730",
+    "url": "https://www.instagram.com/reel/DfmG5sYkkOL/",
+    "story": "17887365846690052",
+    "at": "2026-11-11T14:00:28.736707+05:00"
+   },
+   "facebook": {
+    "id": "1073887065697285",
+    "url": "https://www.facebook.com/reel/1073887065697285",
+    "story": "2056001785119201",
+    "at": "2026-11-11T14:00:46.558796+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7706836231023396884",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Bali mein coconut ka rate dekh ke hairan reh gaye 🥥😳 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #bali #baliprices #kutabeach #coconut #pakistanitraveller",
+    "at": "2026-11-11T14:00:50.664205+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-11T15:00:00+05:00",
