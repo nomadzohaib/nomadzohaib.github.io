@@ -198,7 +198,31 @@
   "time": "tips",
   "file_music": "06_Exports/Reels/tips_itinerary_bold_music.mp4",
   "file_clean": "06_Exports/Reels/tips_itinerary_bold_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "_JRRvhkCQUk",
+    "url": "https://youtube.com/shorts/_JRRvhkCQUk",
+    "at": "2026-11-11T16:57:54.886999+05:00"
+   },
+   "instagram": {
+    "id": "18135712657674631",
+    "url": "https://www.instagram.com/reel/DfmbWAegAK6/",
+    "story": "18247062949314850",
+    "at": "2026-11-11T16:59:06.141464+05:00"
+   },
+   "facebook": {
+    "id": "2177110706251834",
+    "url": "https://www.facebook.com/reel/2177110706251834",
+    "story": "1188433594169511",
+    "at": "2026-11-11T16:59:23.927726+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7706882212280616966",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Bali mein sirf 1 din? Yeh route save karo 📌 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #bali #baliitinerary #canggu #traveltips #traveltok",
+    "at": "2026-11-11T16:59:29.932002+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-11T19:00:00+05:00",
