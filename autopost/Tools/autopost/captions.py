@@ -134,10 +134,19 @@ def blog_url(concept):
     return f"{SITE}/blog/{C.get(concept, {}).get('blog', BLOG_DEFAULT)}.html"
 
 
+# EXPERIMENT E3 (12 Nov): meme-style one-line caption on Instagram/Facebook instead of the long caption.
+# The channel's best-ever posts (1.6k-2.7k views) had one-line captions. See 05_Work/autopost/experiments.json.
+ONE_LINE = {"storm"}
+
+
 def caption(concept, platform, yt_url):
     c = C[concept]
     link = yt_url or "YouTube @nomadzohaib (link in bio)"
     blog = blog_url(concept)
+    if concept in ONE_LINE and platform == "instagram":
+        return f"{c['hook']}\n🎬 Full vlog: link in bio\n\n{' '.join(c['ig'][:5])}"
+    if concept in ONE_LINE and platform == "facebook":
+        return f"{c['hook']}\n🎬 Full vlog 👉 {link}\n\n{' '.join(c['ig'][:4])}"
     if platform == "instagram":
         return (f"{c['hook']}\n\n{c['text']}\n\n🎬 Full Bali vlog on YouTube + 📖 travel guide on our website: link in bio\n"
                 f"📌 Save for your Bali trip\n💬 {c['q']}\n\n{' '.join(c['ig'])}")
