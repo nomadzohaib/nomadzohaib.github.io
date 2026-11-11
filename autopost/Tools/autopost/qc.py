@@ -100,6 +100,7 @@ def check_post(p, yt_url=""):
 if __name__ == "__main__":
     plan = json.loads((ROOT / "05_Work" / "autopost" / "schedule.json").read_text(encoding="utf-8"))
     bad = 0
+    plan = [p for p in plan if p.get("kind", "reel") == "reel"]      # carousels have no video file
     for p in plan:
         ok, iss = check_post(p)
         m = probe(ROOT / p["file_music"])
