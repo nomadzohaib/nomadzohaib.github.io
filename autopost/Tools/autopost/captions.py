@@ -23,7 +23,7 @@ C = {
         tt=["#bali", "#baliprices", "#kutabeach", "#coconut", "#pakistanitraveller"],
         tags=["Bali prices", "Kuta beach", "Bali coconut price", "Bali on a budget", "Bali food prices", "cost of Bali"]),
     "storm": dict(
-        title="2 AM in Bali... Storm Alert! 😳⛈ Kuta Night Ride",
+        title="Bali in November: 2 AM Storm Alert ⛈ Rainy Season Reality",   # 11 Nov: search-style title ("Bali in 1 Day") got 6x the coconut title on Shorts
         hook="Raat ke 2 baje Bali mein yeh ho raha tha 😳",
         text="Tez hawa, barish, aur kal ke liye toofan ka alert ⛈ Phir bhi scooter ride 🛵",
         q="Aap is waqt bahar niklte? 👇",
@@ -47,7 +47,7 @@ C = {
         tt=["#pakistan", "#bali", "#pakistaniinbali", "#traveltok", "#kutabeach"],
         tags=["Pakistani in Bali", "Pakistan Bali", "Bali locals", "Kuta beach", "Pakistani reaction abroad", "Indonesia Pakistan"]),
     "sunset": dict(
-        title="Bali Sunset at FINNS 🌅 No Filter | Canggu",
+        title="Best Sunset in Bali? FINNS Canggu 🌅 No Filter",
         hook="No filter. Bas Bali ka sunset 🌅",
         text="FINNS Beach Club, Canggu. Aur phir... aasmaan ne yeh kiya.",
         q="Bali sunset ya Maldives sunset? 👇",
