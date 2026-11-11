@@ -44,7 +44,15 @@ jobs:
           git rm -q CHECK_ONCE
       - name: Install ffmpeg
         if: steps.chk.outputs.due == 'yes'
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        timeout-minutes: 9          # 11 Nov: apt hung for 55 min twice and Part 3 went out 3 h late
+        run: |
+          if command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null; then exit 0; fi
+          for i in 1 2 3; do
+            sudo timeout 150 apt-get install -y -qq --no-install-recommends ffmpeg && break
+            sudo dpkg --configure -a || true
+            sudo timeout 100 apt-get update -qq || true
+          done
+          command -v ffmpeg && command -v ffprobe
       - name: Post what is due
         if: steps.chk.outputs.due == 'yes'
         working-directory: autopost
