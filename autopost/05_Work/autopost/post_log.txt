@@ -13,3 +13,6 @@ tiktok     OK   token ok
 2026-11-11 14:00    facebook story posted
 2026-11-11 14:00 coconut/bold -> facebook: https://www.facebook.com/reel/1073887065697285
 2026-11-11 14:00 coconut/bold -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post
+2026-11-11 15:39    instagram story posted
+2026-11-11 15:39 rain/carousel -> instagram: https://www.instagram.com/p/DfmSWyYgOK7/
+2026-11-11 15:40 rain/carousel -> facebook: https://www.facebook.com/862999883574148_122149167831208626
