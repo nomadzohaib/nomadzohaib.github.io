@@ -74,3 +74,6 @@ RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError
 2026-11-12 14:13 storm/cine: quality gate PASS
 2026-11-12 14:15    instagram story posted
 2026-11-12 14:15 storm/cine -> instagram: https://www.instagram.com/reel/DfotXSRDq8y/
+2026-11-12 15:18    instagram story posted
+2026-11-12 15:18 beachwalk/carousel -> instagram: https://www.instagram.com/p/Dfo0t1TF1PR/
+2026-11-12 15:18 beachwalk/carousel -> facebook: https://www.facebook.com/862999883574148_122149268145208626
