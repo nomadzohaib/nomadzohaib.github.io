@@ -31,7 +31,7 @@ C = {
         tt=["#bali", "#balinights", "#storm", "#traveltok", "#pakistanitraveller"],
         tags=["Bali at night", "Kuta at night", "Bali storm", "Bali scooter", "Bali rainy season", "Bali weather"]),
     "labubu": dict(
-        title="Bali's LABUBU Christmas Village 🧸🎄 Pop Mart Beachwalk",
+        title="Labubu in Bali: Pop Mart Christmas Village 🧸 Beachwalk Kuta",   # 12 Nov: search-style (what people type)
         hook="Bali mein Labubu ka poora gaon! 🧸🎄",
         text="Beachwalk Kuta mein Pop Mart ka Labubu Christmas village. Har shelf pe Labubu!",
         q="Labubu fan ho? Kaunsa wala lete? 👇",
@@ -55,7 +55,7 @@ C = {
         tt=["#balisunset", "#bali", "#sunset", "#canggu", "#nofilter"],
         tags=["Bali sunset", "Canggu sunset", "FINNS sunset", "best sunset Bali", "Bali beach", "Bali aesthetic"]),
     "hotel_switch": dict(
-        title="Bali Hotel Switch: 5 Nights, Then We Moved 200 m 😂",
+        title="Where to Stay in Bali? Kuta Hotel Switch After 5 Nights 🏨",   # 12 Nov: search-style
         hook="5 raatein ek hotel mein... phir sirf 200 meter door 😂",
         text="Sunday Hotel se B Hotel & Spa, Kuta. Aur andar yeh view tha 👀",
         q="Aap ek hi hotel mein rehte ho ya switch karte ho? 👇",
