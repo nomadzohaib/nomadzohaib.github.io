@@ -137,6 +137,20 @@ def _g(method, url, **kw):
 
 
 def ig_upload(path, caption):
+    """Instagram's upload server sometimes answers ProcessingFailedError at random; retry with a fresh container."""
+    last = None
+    for attempt in range(3):
+        try:
+            return _ig_upload_once(path, caption)
+        except RuntimeError as e:
+            last = e
+            if "ProcessingFailedError" not in str(e) and "processing error" not in str(e):
+                raise
+            time.sleep(20 * (attempt + 1))
+    raise last
+
+
+def _ig_upload_once(path, caption):
     tok, ig, _ = meta()
     if not ig:
         raise Skip("IG_USER_ID missing in .env")
@@ -144,10 +158,10 @@ def ig_upload(path, caption):
     c = _g("POST", f"{g}/{ig}/media", data={"media_type": "REELS", "upload_type": "resumable", "caption": caption,
                                             "share_to_feed": "true", "access_token": tok})
     cid = c["id"]
-    size = Path(path).stat().st_size
-    with open(path, "rb") as fh:
-        _g("POST", f"https://rupload.facebook.com/ig-api-upload/{GV()}/{cid}",
-           headers={"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(size)}, data=fh)
+    data = Path(path).read_bytes()                # whole body with an exact Content-Length (streamed uploads fail more often)
+    _g("POST", f"https://rupload.facebook.com/ig-api-upload/{GV()}/{cid}",
+       headers={"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(data)),
+                "Content-Type": "application/octet-stream"}, data=data)
     for _ in range(90):                          # wait for Instagram to process (up to ~15 min)
         st = _g("GET", f"{g}/{cid}", params={"fields": "status_code,status", "access_token": tok})
         if st.get("status_code") == "FINISHED":
