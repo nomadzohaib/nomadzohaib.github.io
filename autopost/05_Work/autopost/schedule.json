@@ -340,7 +340,31 @@
   "time": "tips",
   "file_music": "06_Exports/Reels/sunset_cine_music.mp4",
   "file_clean": "06_Exports/Reels/sunset_cine_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "3vhajMbrZZ0",
+    "url": "https://youtube.com/shorts/3vhajMbrZZ0",
+    "at": "2026-11-12T17:14:37.172843+05:00"
+   },
+   "instagram": {
+    "id": "18121140968074235",
+    "url": "https://www.instagram.com/reel/DfpCDFLDL1H/",
+    "story": "18103768721553722",
+    "at": "2026-11-12T17:15:47.877608+05:00"
+   },
+   "facebook": {
+    "id": "1138274358697197",
+    "url": "https://www.facebook.com/reel/1138274358697197",
+    "story": "1120860040861990",
+    "at": "2026-11-12T17:16:05.142776+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7707257504505382930",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "No filter. Bas Bali ka sunset 🌅 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #balisunset #bali #sunset #canggu #nofilter",
+    "at": "2026-11-12T17:16:11.789978+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-12T19:00:00+05:00",
