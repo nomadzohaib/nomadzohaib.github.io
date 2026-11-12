@@ -286,7 +286,25 @@
   "time": "afternoon",
   "file_music": "06_Exports/Reels/storm_cine_music.mp4",
   "file_clean": "06_Exports/Reels/storm_cine_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "i_Ram2qsnkM",
+    "url": "https://youtube.com/shorts/i_Ram2qsnkM",
+    "at": "2026-11-12T14:11:18.153023+05:00"
+   },
+   "facebook": {
+    "id": "1459333836395491",
+    "url": "https://www.facebook.com/reel/1459333836395491",
+    "story": "1733880958473472",
+    "at": "2026-11-12T14:12:11.249035+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7707208782065993780",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Raat ke 2 baje Bali mein yeh ho raha tha 😳 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #bali #balinights #storm #traveltok #pakistanitraveller",
+    "at": "2026-11-12T14:12:17.280126+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-12T15:00:00+05:00",

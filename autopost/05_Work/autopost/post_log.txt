@@ -52,3 +52,22 @@ youtube    OK   Nomad Zohaib
 facebook   OK   Page Nomad Zohaib
 instagram  OK   nomadzohaib.666
 tiktok     OK   token ok
+2026-11-12 14:11 storm/cine: quality gate PASS
+2026-11-12 14:11 storm/cine -> youtube: https://youtube.com/shorts/i_Ram2qsnkM
+2026-11-12 14:11 storm/cine -> instagram: FAILED 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}
+Traceback (most recent call last):
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/post.py", line 239, in due
+    r = post_one(p, pf, dry)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/post.py", line 181, in post_one
+    r = P.ig_upload(f, CAP.caption(c, "instagram", yt_url))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/platforms.py", line 149, in ig_upload
+    _g("POST", f"https://rupload.facebook.com/ig-api-upload/{GV()}/{cid}",
+  File "/home/runner/work/nomadzohaib.github.io/nomadzohaib.github.io/autopost/Tools/autopost/platforms.py", line 135, in _g
+    raise RuntimeError(f"{r.status_code} {r.text[:400]}")
+RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}
+
+2026-11-12 14:12    facebook story posted
+2026-11-12 14:12 storm/cine -> facebook: https://www.facebook.com/reel/1459333836395491
+2026-11-12 14:12 storm/cine -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post
