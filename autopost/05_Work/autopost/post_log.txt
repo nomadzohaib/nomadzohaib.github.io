@@ -84,3 +84,10 @@ RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError
 2026-11-12 17:16    facebook story posted
 2026-11-12 17:16 sunset/cine -> facebook: https://www.facebook.com/reel/1138274358697197
 2026-11-12 17:16 sunset/cine -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post
+2026-11-12 19:30 story_p4/cine: quality gate PASS
+2026-11-12 19:30 story_p4/cine -> youtube: https://youtube.com/shorts/IRUszBEd-vk
+2026-11-12 19:32    instagram story posted
+2026-11-12 19:32 story_p4/cine -> instagram: https://www.instagram.com/reel/DfpRszmAPEX/
+2026-11-12 19:32    facebook story posted
+2026-11-12 19:32 story_p4/cine -> facebook: https://www.facebook.com/reel/1354799949959820
+2026-11-12 19:32 story_p4/cine -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post

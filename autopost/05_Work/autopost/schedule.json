@@ -374,7 +374,31 @@
   "time": "evening",
   "file_music": "06_Exports/Reels/story_p4_cine_music.mp4",
   "file_clean": "06_Exports/Reels/story_p4_cine_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "IRUszBEd-vk",
+    "url": "https://youtube.com/shorts/IRUszBEd-vk",
+    "at": "2026-11-12T19:30:29.112611+05:00"
+   },
+   "instagram": {
+    "id": "18114009653136120",
+    "url": "https://www.instagram.com/reel/DfpRszmAPEX/",
+    "story": "18138313675643013",
+    "at": "2026-11-12T19:32:29.300176+05:00"
+   },
+   "facebook": {
+    "id": "1354799949959820",
+    "url": "https://www.facebook.com/reel/1354799949959820",
+    "story": "1150536577464585",
+    "at": "2026-11-12T19:32:48.053662+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7707292500477904948",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Part 4: FINNS, Canggu... aur phir aasmaan ne yeh kiya 🌅 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #balisunset #canggu #bali #storytime #traveltok",
+    "at": "2026-11-12T19:32:59.107031+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-12T20:00:00+05:00",
