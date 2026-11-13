@@ -516,7 +516,31 @@
   "time": "evening",
   "file_music": "06_Exports/Reels/story_p5_cine_music.mp4",
   "file_clean": "06_Exports/Reels/story_p5_cine_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "SvomZA_h8Ow",
+    "url": "https://youtube.com/shorts/SvomZA_h8Ow",
+    "at": "2026-11-13T19:32:27.089218+05:00"
+   },
+   "instagram": {
+    "id": "17961327894012287",
+    "url": "https://www.instagram.com/reel/Dfr2nzJFxjv/",
+    "story": "18138892627635275",
+    "at": "2026-11-13T19:33:51.494005+05:00"
+   },
+   "facebook": {
+    "id": "1099441946262684",
+    "url": "https://www.facebook.com/reel/1099441946262684",
+    "story": "1159581413272281",
+    "at": "2026-11-13T19:34:10.919711+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7707664211358255122",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Part 5: raat 2 baje toofan aa raha tha ⛈ Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #bali #storm #storytime #traveltok #pakistanitraveller",
+    "at": "2026-11-13T19:34:17.691769+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-13T20:00:00+05:00",
