@@ -94,3 +94,10 @@ RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError
 2026-11-12 20:27    instagram story posted
 2026-11-12 20:27 kuta_beach/carousel -> instagram: https://www.instagram.com/p/DfpYAEOl5vQ/
 2026-11-12 20:27 kuta_beach/carousel -> facebook: https://www.facebook.com/862999883574148_122149300503208626
+2026-11-13 14:32 labubu/bold: quality gate PASS
+2026-11-13 14:32 labubu/bold -> youtube: https://youtube.com/shorts/6Lg_nq73-xw
+2026-11-13 14:33    instagram story posted
+2026-11-13 14:33 labubu/bold -> instagram: https://www.instagram.com/reel/DfrUUYHGDAg/
+2026-11-13 14:34    facebook story posted
+2026-11-13 14:34 labubu/bold -> facebook: https://www.facebook.com/reel/1726220369067435
+2026-11-13 14:34 labubu/bold -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post

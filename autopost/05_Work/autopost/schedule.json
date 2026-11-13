@@ -428,7 +428,31 @@
   "time": "afternoon",
   "file_music": "06_Exports/Reels/labubu_bold_music.mp4",
   "file_clean": "06_Exports/Reels/labubu_bold_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "6Lg_nq73-xw",
+    "url": "https://youtube.com/shorts/6Lg_nq73-xw",
+    "at": "2026-11-13T14:32:44.394154+05:00"
+   },
+   "instagram": {
+    "id": "18457211881127323",
+    "url": "https://www.instagram.com/reel/DfrUUYHGDAg/",
+    "story": "18112760630182758",
+    "at": "2026-11-13T14:33:50.636860+05:00"
+   },
+   "facebook": {
+    "id": "1726220369067435",
+    "url": "https://www.facebook.com/reel/1726220369067435",
+    "story": "4330315507228216",
+    "at": "2026-11-13T14:34:09.162648+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7707586660036266036",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Bali mein Labubu ka poora gaon! 🧸🎄 Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #labubu #popmart #bali #labubucollection #traveltok",
+    "at": "2026-11-13T14:34:15.187132+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-13T15:00:00+05:00",
