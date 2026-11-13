@@ -31,7 +31,7 @@ C = {
         tt=["#bali", "#balinights", "#storm", "#traveltok", "#pakistanitraveller"],
         tags=["Bali at night", "Kuta at night", "Bali storm", "Bali scooter", "Bali rainy season", "Bali weather"]),
     "labubu": dict(
-        title="Labubu in Bali: Pop Mart Christmas Village 🧸 Beachwalk Kuta",   # 12 Nov: search-style (what people type)
+        title="Labubu Village in Bali 🧸 Pop Mart Christmas at Beachwalk Kuta",   # 13 Nov 22:30: fresh title for the Sun cine post (old one used by labubu bold: 1,042 YT views, 136/h); same keywords, not a duplicate
         hook="Bali mein Labubu ka poora gaon! 🧸🎄",
         text="Beachwalk Kuta mein Pop Mart ka Labubu Christmas village. Har shelf pe Labubu!",
         q="Labubu fan ho? Kaunsa wala lete? 👇",
@@ -72,13 +72,13 @@ C = {
         tags=["Bali prices", "Bali prices 2026", "Bali on a budget", "Bali travel tips", "cost of Bali", "Kuta prices"],
         blog="bali-prices-we-paid"),
     "tips_itinerary": dict(
-        title="Bali in 1 Day: Kuta to Canggu, 5 Stops 📍 Save This",
+        title="Bali 1 Day Itinerary: Labubu Village, Kuta Beach & FINNS 📍",   # 13 Nov 22:30: 'Labubu' is the week's best YT keyword (136 views/h vs <=8 for others); fresh title for the Sat cine post
         hook="Bali mein sirf 1 din? Yeh route save karo 📌",
         text="B Hotel › Beachwalk (Labubu) › Kuta Beach › FINNS sunset › Canggu nights. ~10 km by scooter 🛵",
         q="Aap kaunsa stop add karte? 👇",
         ig=["#Bali", "#BaliItinerary", "#Canggu", "#Kuta", "#BaliTravel", "#TravelTips", "#NomadZohaib", "#TravelReels"],
         tt=["#bali", "#baliitinerary", "#canggu", "#traveltips", "#traveltok"],
-        tags=["Bali itinerary", "Kuta to Canggu", "Bali one day", "Bali travel tips", "things to do in Bali", "Canggu"],
+        tags=["Bali itinerary", "Bali 1 day itinerary", "Labubu Bali", "Kuta to Canggu", "Bali one day", "Bali travel tips", "things to do in Bali", "Canggu"],
         blog="kuta-to-canggu-one-day"),
 }
 
