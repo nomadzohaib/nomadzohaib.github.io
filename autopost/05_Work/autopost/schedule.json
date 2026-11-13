@@ -460,7 +460,19 @@
   "concept": "scooter",
   "style": "carousel",
   "time": "image",
-  "posted": {}
+  "posted": {
+   "instagram": {
+    "id": "18146522122718898",
+    "url": "https://www.instagram.com/p/DfrbSddlNVm/",
+    "story": "18157694053525662",
+    "at": "2026-11-13T15:34:08.629664+05:00"
+   },
+   "facebook": {
+    "id": "862999883574148_122149378851208626",
+    "url": "https://www.facebook.com/862999883574148_122149378851208626",
+    "at": "2026-11-13T15:34:21.988521+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-13T17:00:00+05:00",
