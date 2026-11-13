@@ -104,3 +104,10 @@ RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError
 2026-11-13 15:34    instagram story posted
 2026-11-13 15:34 scooter/carousel -> instagram: https://www.instagram.com/p/DfrbSddlNVm/
 2026-11-13 15:34 scooter/carousel -> facebook: https://www.facebook.com/862999883574148_122149378851208626
+2026-11-13 17:25 tips_prices/bold: quality gate PASS
+2026-11-13 17:25 tips_prices/bold -> youtube: https://youtube.com/shorts/c1e0uJqIsDY
+2026-11-13 17:26    instagram story posted
+2026-11-13 17:26 tips_prices/bold -> instagram: https://www.instagram.com/reel/DfroE9Ikh9Z/
+2026-11-13 17:26    facebook story posted
+2026-11-13 17:26 tips_prices/bold -> facebook: https://www.facebook.com/reel/2099382020685779
+2026-11-13 17:27 tips_prices/bold -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post

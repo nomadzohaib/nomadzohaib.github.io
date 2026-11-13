@@ -482,7 +482,31 @@
   "time": "tips",
   "file_music": "06_Exports/Reels/tips_prices_bold_music.mp4",
   "file_clean": "06_Exports/Reels/tips_prices_bold_clean.mp4",
-  "posted": {}
+  "posted": {
+   "youtube": {
+    "id": "c1e0uJqIsDY",
+    "url": "https://youtube.com/shorts/c1e0uJqIsDY",
+    "at": "2026-11-13T17:25:22.852168+05:00"
+   },
+   "instagram": {
+    "id": "18025044782952193",
+    "url": "https://www.instagram.com/reel/DfroE9Ikh9Z/",
+    "story": "17923303596452373",
+    "at": "2026-11-13T17:26:36.494692+05:00"
+   },
+   "facebook": {
+    "id": "2099382020685779",
+    "url": "https://www.facebook.com/reel/2099382020685779",
+    "story": "1174829512175471",
+    "at": "2026-11-13T17:26:58.613599+05:00"
+   },
+   "tiktok": {
+    "id": "v_inbox_file~v2.7707631059001198599",
+    "url": "TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post",
+    "caption_to_paste": "Bali mein asal kharcha kitna? 💸 Real prices! Full vlog YouTube pe 🎬 Guide: nomadzohaib.github.io #bali #baliprices #traveltips #balionabudget #pakistanitraveller",
+    "at": "2026-11-13T17:27:05.499078+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-13T19:00:00+05:00",
