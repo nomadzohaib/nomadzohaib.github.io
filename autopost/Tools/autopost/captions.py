@@ -15,7 +15,7 @@ C = {
         tt=["#bali", "#finnsbeachclub", "#canggu", "#traveltok", "#pakistanitraveller"],
         tags=["FINNS beach club", "FINNS Bali", "Canggu beach club", "Bali beach club", "Bali nightlife", "Bali sunset"]),
     "coconut": dict(
-        title="Bali Coconut Price Shock! Rp 50,000?! 🥥 Kuta Beach",
+        title="Bali Coconut Price 2026: Rp 50,000 at Kuta Beach 🥥",   # 13 Nov: search-style (old 'Price Shock!' title: 112 YT views vs 348 for 'Bali in 1 Day')
         hook="Bali mein coconut ka rate dekh ke hairan reh gaye 🥥😳",
         text="Kuta Beach: 50,000 ka ek, 1 lakh ke do! Aur 1 lakh wala bara coconut 😂 (~PKR 1,800)",
         q="Mehenga ya theek? Comment karo 👇",
@@ -47,7 +47,7 @@ C = {
         tt=["#pakistan", "#bali", "#pakistaniinbali", "#traveltok", "#kutabeach"],
         tags=["Pakistani in Bali", "Pakistan Bali", "Bali locals", "Kuta beach", "Pakistani reaction abroad", "Indonesia Pakistan"]),
     "sunset": dict(
-        title="Best Sunset in Bali? FINNS Canggu 🌅 No Filter",
+        title="Bali Sunset at FINNS Beach Club, Canggu 🌅 No Filter",   # 13 Nov: question title got 4 YT views in 23 h; search-style titles win
         hook="No filter. Bas Bali ka sunset 🌅",
         text="FINNS Beach Club, Canggu. Aur phir... aasmaan ne yeh kiya.",
         q="Bali sunset ya Maldives sunset? 👇",
