@@ -118,3 +118,6 @@ RuntimeError: 400 {"debug_info":{"retriable":false,"type":"ProcessingFailedError
 2026-11-13 19:34    facebook story posted
 2026-11-13 19:34 story_p5/cine -> facebook: https://www.facebook.com/reel/1099441946262684
 2026-11-13 19:34 story_p5/cine -> tiktok: TikTok inbox (draft) - open TikTok, tap the notification, add a trending sound, Post
+2026-11-13 20:22    instagram story posted
+2026-11-13 20:22 pakistani/carousel -> instagram: https://www.instagram.com/p/Dfr8RlZIJJF/
+2026-11-13 20:22 pakistani/carousel -> facebook: https://www.facebook.com/862999883574148_122149403775208626

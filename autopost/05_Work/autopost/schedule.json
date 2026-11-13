@@ -548,7 +548,19 @@
   "concept": "pakistani",
   "style": "carousel",
   "time": "image",
-  "posted": {}
+  "posted": {
+   "instagram": {
+    "id": "18085083467529110",
+    "url": "https://www.instagram.com/p/Dfr8RlZIJJF/",
+    "story": "18122580835981934",
+    "at": "2026-11-13T20:22:22.993805+05:00"
+   },
+   "facebook": {
+    "id": "862999883574148_122149403775208626",
+    "url": "https://www.facebook.com/862999883574148_122149403775208626",
+    "at": "2026-11-13T20:22:39.065133+05:00"
+   }
+  }
  },
  {
   "slot": "2026-11-14T14:00:00+05:00",
