@@ -213,7 +213,13 @@ def post_one(p, platform, dry):
         return r
 
 
+PAUSED = True     # user, 14 Nov 2026: "dont post today stop all task" - nothing posts until this is set back to False
+
+
 def due(dry=False):
+    if PAUSED and not dry:
+        log("PAUSED by the user - nothing posted")
+        return
     plan = build_plan()                       # always re-derive from code; already-posted entries are kept
     now = dt.datetime.now(PKT)
     did = False
@@ -287,6 +293,9 @@ def main():
     if CLOUD and P.env().get("YT_TOKEN_JSON") and not P.YT_TOKEN.exists():
         P.YT_TOKEN.write_text(P.env()["YT_TOKEN_JSON"])
     if a.pending:
+        if PAUSED:
+            print("no")
+            return
         now = dt.datetime.now(PKT)
         plan = build_plan()
         keys = {"reel": PLATFORMS, "image": IMAGE_PLATFORMS}
