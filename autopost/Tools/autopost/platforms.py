@@ -136,12 +136,13 @@ def _g(method, url, **kw):
     return r.json()
 
 
-def ig_upload(path, caption):
-    """Instagram's upload server sometimes answers ProcessingFailedError at random; retry with a fresh container."""
+def ig_upload(path, caption, thumb_offset=None):
+    """Instagram's upload server sometimes answers ProcessingFailedError at random; retry with a fresh container.
+    thumb_offset (ms) picks the reel's cover frame; None keeps Instagram's default (first frame)."""
     last = None
     for attempt in range(3):
         try:
-            return _ig_upload_once(path, caption)
+            return _ig_upload_once(path, caption, thumb_offset)
         except RuntimeError as e:
             last = e
             if "ProcessingFailedError" not in str(e) and "processing error" not in str(e):
@@ -150,13 +151,16 @@ def ig_upload(path, caption):
     raise last
 
 
-def _ig_upload_once(path, caption):
+def _ig_upload_once(path, caption, thumb_offset=None):
     tok, ig, _ = meta()
     if not ig:
         raise Skip("IG_USER_ID missing in .env")
     g = f"https://graph.facebook.com/{GV()}"
-    c = _g("POST", f"{g}/{ig}/media", data={"media_type": "REELS", "upload_type": "resumable", "caption": caption,
-                                            "share_to_feed": "true", "access_token": tok})
+    d = {"media_type": "REELS", "upload_type": "resumable", "caption": caption,
+         "share_to_feed": "true", "access_token": tok}
+    if thumb_offset is not None:
+        d["thumb_offset"] = str(int(thumb_offset))
+    c = _g("POST", f"{g}/{ig}/media", data=d)
     cid = c["id"]
     data = Path(path).read_bytes()                # whole body with an exact Content-Length (streamed uploads fail more often)
     _g("POST", f"https://rupload.facebook.com/ig-api-upload/{GV()}/{cid}",
