@@ -16,7 +16,7 @@ C = {
         tags=["FINNS beach club", "FINNS Bali", "Canggu beach club", "Bali beach club", "Bali nightlife", "Bali sunset"]),
     "coconut": dict(
         title="Bali Coconut Price 2026: Rp 50,000 at Kuta Beach 🥥",   # 13 Nov: search-style (old 'Price Shock!' title: 112 YT views vs 348 for 'Bali in 1 Day')
-        hook="Bali mein coconut ka rate dekh ke hairan reh gaye 🥥😳",
+        hook="Bali mein ek coconut kitne ka? 🥥 Real price!",   # 14 Nov: prices reel hook "asal kharcha kitna? Real prices!" = IG best (1,400 views, 9.1 s, 5 shares)
         text="Kuta Beach: 50,000 ka ek, 1 lakh ke do! Aur 1 lakh wala bara coconut 😂 (~PKR 1,800)",
         q="Mehenga ya theek? Comment karo 👇",
         ig=["#Bali", "#KutaBeach", "#BaliPrices", "#BaliOnABudget", "#Coconut", "#PakistaniTraveller", "#NomadZohaib", "#TravelReels"],
