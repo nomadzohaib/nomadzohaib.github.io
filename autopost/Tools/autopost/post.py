@@ -54,6 +54,9 @@ IMAGES = [("prices", "itinerary"), ("rain", "finns"), ("beachwalk", "kuta_beach"
           ("stay", "budget"), ("sunset_spots", "recap")]
 IMAGE_PLATFORMS = ["instagram", "facebook"]
 TIPS = P.STATE / "tips_posts.json"
+# EXPERIMENT E8 (14 Nov): Instagram cover frame. Sunset bold (Sun 15 Nov 2 PM) uses the golden sun-on-horizon frame
+# with "Aur phir... aasmaan ne yeh kiya" (7.5 s) instead of the default first frame. Video itself is unchanged.
+IG_COVER_MS = {("sunset", "bold"): 7500}
 
 
 def build_plan():
@@ -178,7 +181,7 @@ def post_one(p, platform, dry):
     if platform in ("instagram", "facebook"):
         f = social_safe(f)
     if platform == "instagram":
-        r = P.ig_upload(f, CAP.caption(c, "instagram", yt_url))
+        r = P.ig_upload(f, CAP.caption(c, "instagram", yt_url), IG_COVER_MS.get((c, p.get("style"))))
         try:
             P.ig_comment(r["id"], CAP.pinned_comment(c))
         except Exception as e:
